@@ -1,0 +1,935 @@
+/* Header */
+.header {
+    position: relative;
+    z-index: 1;
+    
+}
+.scrolled .header-box {
+    top: -30px;
+}
+.scrolled .header-menu {
+    top: 0;
+}
+.header-box {
+    position: fixed;
+    height: 30px;
+    /* height: var(--height-box); */
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #eaebf7;
+}
+.header-box-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding:0 15px;
+    line-height: 30px;
+
+}
+.header-box-left {
+    width: 40%;
+    
+}
+.header-box-left-content {
+    color: #DE8200;
+    font-size: 12px;
+    padding-left: 15px;
+}
+.content-icon {
+    
+}
+.content-text {
+    margin-left: 4px;
+
+}
+.header-box-right {
+    display: flex;
+    /* width: 60%; */
+    justify-content: right;
+}
+.box-right-content {
+    position: relative;
+}
+.content-link {
+    color: #777777;
+    font-size: 13px;
+    padding: 4px 15px;
+    font-weight: 100;
+
+}
+.box-right-content:last-child {
+    padding-right: 0;
+}
+.box-right-content:not(:first-child)::after {
+    content: '';
+    position: absolute;
+    border-right: 1px solid #bbb;
+    height: 15px;
+    display: block;
+    left: 0;
+    top: 5px;
+    
+}
+.header-menu {
+    position: fixed;
+    top: var(--height-box);
+    left: 0;
+    right: 0;
+    background-color: var(--white);
+ 
+}
+.header-menu-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+.header-menu-left,
+.header-menu-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-menu-item {
+    position: relative;
+    height: 100%;
+    padding: 10px 15px;
+}
+.header-menu-link {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+.header-menu-text {
+    font-size: 15px;
+    font-weight: 700;
+    color: #AFAFAF;
+    margin: 5px 0 0 10px;
+    text-transform: uppercase;
+
+}
+.header-menu-item:hover .header-menu-text {
+    color: #4c4c4c;
+}
+.header-menu-item:hover .no-active {
+    display: none;
+}
+.menu-item-library:hover .header-library,
+.header-menu-item:hover .active {
+    display: block;
+}
+
+/* Absolute */
+.menu-item-personal {
+
+}
+
+/* Header library */
+.menu-item-library {
+}
+.header-library {
+    position: absolute;
+    top:100%;
+    left: calc(-200% - 27px);
+    padding: 20px 35px;
+    background-color: var(--white);
+    border: 1px solid var(--border-color);
+    display: none;
+}
+.header-library::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 338px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: transparent transparent var(--border-color) transparent;
+}
+.header-library::after {
+    content: '';
+    position: absolute;
+    top: -24px;
+    left: 338px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+.library-heading {
+    display: flex;
+    align-items: center;
+    
+}
+.library-title {
+    font-size: 18px;
+    color: var(--text-color);
+    font-weight: bold;
+    margin-right: 10px;
+}
+.library-arrow {
+    display: flex;
+    
+}
+.library-arrow a {
+    margin-left: 10px;
+}
+.library-list {
+    display: flex;
+    margin-top: 8px;
+
+}
+.library-item {
+    position: relative;
+    min-width: 400px;
+    height: 160px;
+    margin-right: 22px;
+    border: 1px solid #e5e5e5;
+    border-radius: 18px;
+    border-bottom: 6px solid #e5e5e5;
+}
+.library-link {
+    display: flex;
+    align-items: center;
+    padding: 20px 35px 10px;
+    
+}
+.library-link-left {
+    width: 75px;
+    
+}
+.library-link-right {
+    width: calc(100% - 75px);
+    padding-left: 25px;
+    
+}
+.library-check {
+    position: absolute;
+    top: 25px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+}
+.library-name {
+    margin-top: 4px;
+    color: #4c4c4c;
+
+}
+.library-description {
+    font-size: 15px;
+    margin-top: 4px;
+    color: var(--blur-color);
+    line-height: 20px;
+}
+.library-item:first-child:hover {
+    background: #DDF4FF;
+    border-color: #84D8FF
+}
+.library-item:nth-child(2):hover {
+    background: #FAEFFF;
+    border-color: #E7C1FF
+}
+.library-item:nth-child(3):hover {
+    background: #EFFFE2;
+    border-color: #A5ED6E
+
+}
+.library-item:nth-child(4):hover {
+    background: #FFE2E2;
+    border-color: #FFB2B2
+}
+
+.menu-item-guide {
+
+}
+/*Header skill */
+.menu-item-skill {
+
+}
+.menu-item-skill:hover .header-skill {
+    display: block;
+}
+
+.header-skill {
+    position: absolute;
+    top: calc(100% - 6px);
+    left: -20px;
+    background-color: var(--white);
+    width: 230px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    display: none;
+}
+.header-skill::before {
+    content: '';
+    position: absolute;
+    top: -25px;
+    left: 44px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: transparent transparent var(--border-color) transparent;
+}
+.header-skill::after {
+    content: '';
+    position: absolute;
+    top: -24px;
+    left: 44px;
+    border-width: 12px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+}
+.header-skill-content {   
+}
+.header-skill-item {
+    border-bottom: 1px solid var(--border-color);
+}
+.header-skill-item:first-of-type {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.header-skill-item:last-of-type{
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom: none;
+}
+.header-skill-item:hover {
+    background-color: #f0f0f0;
+    
+}
+.header-skill-link {
+    display: flex;
+    justify-content: left;
+    height: 50px;
+    font-size: 13px;
+    width: 100%;
+    line-height: 45px;
+    padding-left: 15px;
+
+}
+.header-skill-icon {
+    width: 40px;
+    margin-top: 10px;
+    margin-right: 10px;
+
+}
+.header-skill-name {
+    font-size: 17px;
+    color: #777777;
+    font-weight: 600;
+    margin: 5px 20px 0 0 ;
+}
+
+.menu-item-tuition {
+    padding-top: 14px;
+}
+.menu-item-tuition .header-menu-link {
+    font-size: 15px;
+    font-weight: bold;
+    color: #1453A3;
+
+}
+.menu-item-premium {
+
+}
+/* Header notification */
+.menu-item-notification:hover .header-notify {
+    display: block;
+}
+
+.header-notify {
+    position: absolute;
+    background-color: var(--white);
+    top: 100%;
+    left: -140px;
+    width: 300px;
+    padding: 15px;
+    border: 3px solid var(--border-color); 
+    border-radius: 10px;
+    display: none;
+}
+.header-notify::before {
+    content: '';
+    position: absolute;
+    top:-12px;
+    left: calc(50% + 8px);
+    width: 15px;
+    height: 15px;
+    background: var(--white);
+    border-right: 3px solid var(--border-color);
+    border-bottom: 3px solid var(--border-color);
+    transform: rotate(-135deg);
+}
+.header-notify-content {
+    
+}
+.header-notify-heading {
+
+    
+}
+.header-notify-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-dark-color);
+    
+}
+.header-notify-empty {
+    margin-top: 15px;
+    
+}
+.header-notify-text {
+    font-size: 15px;
+    color: var(--text-color);
+    font-weight: 400;
+    line-height: 20px;
+    
+}
+.header-notify-icon {
+    margin: 15px 0;
+    display: block;
+    
+}
+.header-notify-list {
+    
+}
+.menu-item-me {
+
+}
+.header-me-number {
+    font-size: 20px;
+    color: #ffc432;
+    margin-left: 5px;
+    font-weight: bold;
+    display: block;
+}
+.menu-item-avatar {    
+
+}
+.img-avatar {
+    width: 36px;
+    height: 36px;
+
+}
+
+/* Container */
+.container {
+}
+.container-content {
+    
+    
+}
+.container-top {
+    background: linear-gradient(180deg, #1aa8f4, #0260D9);
+    /* background-image: url(https://www.voca.vn/assets/images/home-bg-birthday.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50%;
+    padding: 160px 0;
+    
+}
+.container-logo {
+    max-width: 384px;
+    margin: auto;
+    
+}
+.container-welcome {
+    color: var(--white);
+    display: block;
+    text-align: center;
+    padding-bottom: 70px;
+    
+}
+.container-welcome-heading {
+    font-size: 24px;
+    margin-top: 30px;
+    font-weight: 300;
+}
+.container-welcome-name {
+    font-size: 32px;
+    margin-top: 20px;
+
+}
+.container-welcome-btn {
+    margin-top: 40px;
+    
+}
+.container-welcome-item {
+    max-width: 318px;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin: auto;
+    text-align: center;
+}
+.container-welcome-link {
+    display: block;
+    font-size: 15px;
+    color: var(--white);
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 18px;
+    
+}
+.container-welcome-link:hover {
+    filter: brightness(1.1);
+}
+.link-register {
+    background-color: #5ECE00;
+    border-bottom: 4px solid #65A20E;
+}
+.link-premium {
+    background-color: #2B70C9;
+    border: 1px solid #1453A3;
+    border-bottom: 4px solid #1453A3;
+    margin-top: 20px;
+}
+.container-introduce {
+    padding: 30px 15px 35px;
+    
+}
+.container-bg {
+    position: relative;
+}
+.container-bg--cloud {
+    position: absolute;
+    height: 160px;
+    background: url(https://www.voca.vn/assets/images/home-cloud-bg.png);
+    top: -159px;
+    left: 0;
+    right: 0;
+    
+}
+.container-introduce-content {
+    max-width: 1200px;
+    margin: auto;
+}
+.container-introduce-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.intro-left {
+
+}
+.intro-left-img {
+
+}
+.intro-right {
+    padding: 20px;
+    margin: 40px 0 0 20px;
+}
+.intro-right-title {
+    font-size: 32px;
+    color: #58CC02;
+    font-weight: 700;
+    margin: 0;
+
+}
+.intro-right-text{
+    margin-top: 10px;
+    font-size: 20px;
+    color: #4C4C4C;
+}
+.intro-right-text--bold {
+    font-weight: bold;
+    
+}
+.container-introduce-video {
+}
+.intro-video-title {
+    position: relative;
+    margin: 70px auto 0;
+    text-align: center;
+    font-size: 25px;
+}
+.intro-video-title h4 {
+    color: var(--text-content-color);
+    font-weight: 300;
+}
+.intro-video-title h3 {
+    color: #0064D6;
+}
+.intro-video-title::before {
+    content: '';
+    position: absolute;
+    background: url(https://www.voca.vn/assets/images/home-quote.svg);
+    top: 0;
+    left: 10px;
+    display: block;
+    width: 54px;
+    height: 54px;
+}
+.intro-video-title::after {
+    content: '';
+    position: absolute;
+    background: url(https://www.voca.vn/assets/images/home-quote.svg);
+    top: 0px;
+    right: 10px;
+    display: block;
+    width: 54px;
+    height: 54px;
+    transform: rotate(180deg);
+}
+
+.intro-video-content {
+    max-width: 727px;
+    margin: 50px auto 0;
+    /* overflow: hidden; */
+    
+}
+.intro-video-content video {
+    width: 100%;
+    display: inline-block;
+    border-radius: 28px;
+    
+}
+.container-introduce-method {
+    margin-top: 70px;
+    border-top: 1px solid var(--border-color);
+
+}
+.intro-method-title {
+    font-size: 32px;
+    color: var(--text-content-color);
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 55px;
+
+}
+.intro-method-title span {
+    color: #58CC02;
+}
+.intro-method-content {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+
+}
+.intro-method-left {
+    color: var(--text-content-color);
+    
+}
+.intro-method-name {
+    font-size: 32px;
+
+}
+.intro-method-name h5 {
+    font-weight: 300;
+}
+.intro-method-text {
+    font-size: 20px;
+    margin-top: 25px;
+    line-height: 1.5;
+
+}
+.intro-method-link {
+    margin-top: 25px;
+    color: #2B70C9;
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+
+}
+.container-benefit {
+
+}
+
+.container-benefit-bg {
+    background: url(https://www.voca.vn/assets/images/home-cloud-blue-bg.svg);
+    height: 137px;
+    margin-bottom: -2px;
+
+}
+
+.container-benefit-content {
+    background: linear-gradient(180deg, #1CB0F6, #0260D9);
+    padding: 50px 0 90px;
+
+}
+.benefit-title {
+    font-size: 32px;
+    color: var(--white);
+    text-align: center;
+
+}
+.benefit-content {
+    max-width: 1500px;
+    padding: 0 15px;
+    margin: auto;
+    background: url(https://www.voca.vn/assets/images/home-multiple-cloud-bg.svg);
+
+}
+.benefit-content-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 990px;
+    margin: auto ;
+    padding-top: 70px;
+    /* flex-wrap: wrap; */
+    gap: 75px;
+}
+.benefit-content-item:nth-of-type(2n) {
+    flex-direction: row-reverse;    
+}  
+
+.benefit-content-left {
+}
+.benefit-content-right {
+    border-bottom: 1px dashed var(--white);
+    padding-bottom: 20px;
+    
+}
+.benefit-content-text {
+    font-size: 22px;
+    color: var(--white);
+    font-weight: 700;
+
+}
+.benefit-content-download {
+    display: flex;
+    justify-content: left;
+    margin-top: 50px;
+    
+}
+
+.benefit-download-app {
+    margin-right: 20px;
+
+}
+.benefit-download-google {
+
+}
+.container-story {
+    padding-top: 75px;
+
+}
+.container-story-content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 15px 38px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e5e5e5;
+    
+}
+.container-story-left {
+    max-width: 640px;
+    padding: 30px 30px 0 0;
+
+}
+.container-story-title {
+    font-size: 32px;
+    color: #2B70C9;
+
+}
+.container-story-text {
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.5;
+
+}
+.container-story-link {
+    display: block;
+    font-size: 20px;
+    color: #2B70C9;
+    margin-top: 20px;
+    font-weight: 600;
+
+}
+.container-story-right {
+
+}
+
+
+.container-community {
+    
+}
+.container-community-content {
+    max-width: 1280px;
+    padding: 90px 15px;
+    margin: 0 auto;
+    
+}
+.community-title {
+    font-size: 32px;
+    text-align: center;
+    color: var(--text-content-color);
+}
+.community-title span {
+    color: #58CC02;
+}
+
+.community-content {
+    margin-top: 60px;
+    display: flex;
+    gap: 24px;
+
+}
+.community-item {
+    width: 294px;
+    /* height: 453px; */
+
+}
+.community-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #2B70C9;
+    border-radius: 26px;
+    padding: 20px;
+
+}
+.community-img {
+    width: 100%;
+    height: 199px;
+
+}
+.community-profile {
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.community-name {
+    font-size: 22px;
+    color: #4C4C4C;
+    font-weight: bold;
+
+}
+.community-career {
+    font-size: 15px;
+    color: #777777;
+
+}
+.community-start {
+    font-size: 15px;
+    color: #777;
+    position: relative;
+    padding-left: 18px;
+}
+.community-start:before {
+    content: '';
+    position: absolute;
+    background: url(https://www.voca.vn/assets/images/home-star.svg);
+    width: 13px;
+    height: 13px;
+    top: 5px;
+    left: 0;
+    display: block;
+}
+.community-text {
+    font-size: 15px;
+    color: #AFAFAF;
+    height: 44px;
+    overflow: hidden;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    line-height: 22px;
+
+}
+.community-view {
+    margin-top: 10px;
+    font-size: 15px;
+    color: #2B70C9;
+    padding: 5px 0 0 31px;
+    font-weight: 600;
+    position: relative;
+
+}
+.community-view::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: url(https://www.voca.vn/assets/images/home-play-story.svg);
+    top: 4px;
+    left: 0;
+}
+.container-media {
+
+}
+.container-media-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.media-title {
+    font-size: 32px;
+    color: #4C4C4C;
+    text-align: center;
+}
+.media-title span {
+    color: #58CC02;
+}
+.media-content {
+
+}
+.media-item {
+    display: flex;
+    padding: 60px 0 90px;
+    align-items: center;
+    /* justify-content: space-around; */
+    
+}
+.media-item:not(:last-child) {
+    border-bottom: 1px solid #e5e5e5;
+
+}
+.media-left {
+    width: 30%;
+}
+.media-right {
+    
+}
+.media-right-name {
+    font-size: 22px;
+    color: var(--text-content-color);
+
+
+}
+.media-right-content {
+    margin-top: 10px;
+    font-size: 16px;
+
+}
+/* Footer */
+.footer {
+
+}
+.footer-border {
+    max-width: 910px;
+    padding: 0 15px;
+    margin: 50px auto 0;
+
+}
+.footer-content {
+    max-width: 850px;
+    display: flex;
+    justify-content: center;
+    border-top: 2px solid #e5e5e5;
+    padding-top: 30px;
+}
+.footer-item {
+    margin: 0 12px 20px;
+    
+}
+.footer-link {
+    font-size: 15px;
+    font-weight: 600;
+    color: #afafaf;
+    letter-spacing: 0.8;
+    text-transform: uppercase;
+
+}
+.footer-item:hover .footer-link {
+    color: #1CB0F6;
+}

@@ -1,0 +1,70 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Baloo Tamma 2';
+    /* height: 100%; */
+}
+:root {
+    --black: #000;
+    --white: #fff;
+    --text-color:#777777;
+    --text-content-color: #4C4C4C;
+    --text-dark-color: #4c4c4c;
+    --blur-color:#777777;
+    --border-color: #e5e5e5;
+    --height-box: 30px;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+img, svg {
+    display: block;
+    margin: auto;
+}
+.active {
+    display: none;
+}
+@font-face { 
+    font-family: Roboto; 
+    src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); 
+}
+
+/* Animation */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-180%);
+    }
+    to {
+        opacity: 1;
+        display: block;
+        transform: translateX(0);
+
+    }
+}
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+
+    }
+} 
+.animationLeft {
+    animation: slideInLeft linear 0.5s;
+}
+.animationRight {
+    animation: slideInRight linear 0.5s;
+}
