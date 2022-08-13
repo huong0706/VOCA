@@ -68,3 +68,6 @@ img, svg {
 .animationRight {
     animation: slideInRight linear 0.5s;
 }
+.hidden {
+    display: none;
+}
