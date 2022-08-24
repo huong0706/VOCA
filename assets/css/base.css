@@ -29,8 +29,12 @@ li {
 img, svg {
     display: block;
     margin: auto;
+    width: 100%;
 }
 .active {
+    display: none;
+}
+.hidden {
     display: none;
 }
 @font-face { 

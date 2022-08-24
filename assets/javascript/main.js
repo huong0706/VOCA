@@ -39,7 +39,8 @@ window.addEventListener('scroll', scrollAnimation);
 // Change header when clicked button
 var headerLogged = document.querySelector('.header__account-logged');
 var headerGuest = document.querySelector('.header__account-guest');
-var trialStudyBtn = document.querySelector('.header-trial-study');
+
+var trialStudyBtn = document.querySelector('.header__trial-study');
 trialStudyBtn.addEventListener('click', function() {
     headerGuest.classList.toggle('hidden');
     headerLogged.classList.toggle('hidden');
