@@ -29,8 +29,12 @@ li {
 img, svg {
     display: block;
     margin: auto;
+    width: 100%;
 }
 .active {
+    display: none;
+}
+.hidden {
     display: none;
 }
 @font-face { 
@@ -67,4 +71,7 @@ img, svg {
 }
 .animationRight {
     animation: slideInRight linear 0.5s;
+}
+.hidden {
+    display: none;
 }

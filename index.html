@@ -11,21 +11,21 @@
         <link rel="icon" href="assets/image/logo.png" type="image/icon type">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/assets/css/base.css">
-        <link rel="stylesheet" href="/assets/css/main.css">
-        <link rel="stylesheet" href="/assets/css/responsive.css">
+        <link rel="stylesheet" href="assets/css/base.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-        <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     </head>
     <body>
         <div class="app">
             <div class="header">
-                <div class="header__account-logged">
+                <div class="header__account-logged hidden">
                     <div class="header-box ">
                         <div class="header-box-content">
                             <div class="header-box-left">
@@ -44,6 +44,18 @@
                     <div class="header-menu">
                         <div class="header-menu-content">
                             <div class="header-menu-left">
+                                <div class="header-menu-item menu-item-control">
+                                    <a class="header-menu-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="4120px" width="27px" height="20px" viewBox="0 0 27 20">
+                                            <g transform="translate(-417 -20)">
+                                                <rect width="27" height="4" rx="2" transform="translate(417 20)" fill="#e5e5e5" />
+                                                <rect width="27" height="4" rx="2" transform="translate(417 28)" fill="#e5e5e5" />
+                                                <rect width="27" height="4" rx="2" transform="translate(417 36)" fill="#e5e5e5" />
+                                            </g>
+                                        </svg>
+                                        
+                                    </a>
+                                </div>
                                 <div class="header-menu-item menu-item-personal">
                                     <a href="" class="header-menu-link">
                                         <svg class="no-active" xmlns="http://www.w3.org/2000/svg" x="0px" y="3290px" width="25.9px" height="27.8px" viewBox="0 0 25.9 27.8" style="enable-background: new 0 0 25.9 27.8;" xml:space="preserve">
@@ -565,10 +577,43 @@
                             <div class="header-menu-right">
                                 <div class="header-menu-item menu-item-tuition">
                                     <a href="" class="header-menu-link">Học phí</a>
+                                    
                                 </div>
                                 <div class="header-menu-item menu-item-premium">
                                     <a href="" class="header-menu-link">
                                         <img src="https://www.voca.vn/assets/images/menu-premium-button.svg?n=3">
+                                    </a>
+
+                                    <div class="header-menu-mobile">
+                                        <a class="header-mobile-link">
+                                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="3840px" width="32.714px" height="25.292px" viewBox="0 0 32.714 25.292">
+                                                <path
+                                                    d="M8.321,25.292A2.828,2.828,0,0,1,5.591,23.2L1.924,9.689A2.978,2.978,0,1,1,5.949,6.7q.057.038.113.08L9.176,9.086h0L13.67,4.376a3.012,3.012,0,1,1,5.472-.215l5.021,4.92,2.6-2.065q0-.057,0-.114a2.978,2.978,0,1,1,4.2,2.716L27.271,23.2a2.828,2.828,0,0,1-2.729,2.088Z"
+                                                    transform="translate(0 0)"
+                                                    fill="#ffc800"
+                                                />
+                                                <path
+                                                    d="M6.172,9.03l1.11.951a.909.909,0,0,0,1.286-.1l2.744-3.244a1.151,1.151,0,0,1,2.028.652l.945,11.905a1.151,1.151,0,0,1-1.148,1.242H8.612A1.151,1.151,0,0,1,7.5,19.571L4.965,9.782A.746.746,0,0,1,6.173,9.03Z"
+                                                    transform="translate(1.394 2.085)"
+                                                    fill="#ffde00"
+                                                />
+                                                <path d="M32.552,25.38a3.961,3.961,0,0,1,2.038-2.414l1.6-.79a.88.88,0,0,1,1.23,1.055L34.044,33.889a.88.88,0,0,1-.839.615H31a.88.88,0,0,1-.843-1.133Z" transform="translate(-8.838 -11.94)" fill="#ffde00" />
+                                            </svg>
+                                            
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="header-menu-mobile">
+                                    <a href="" class="header-mobile-link">
+                                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="3770px" width="27.655px" height="27.655px" viewBox="0 0 27.655 27.655">
+                                            <g transform="translate(-8.246 -7.25)">
+                                                <circle cx="13.078" cy="13.078" r="13.078" transform="translate(8.996 8)" fill="none" stroke="#ddd" stroke-width="1.5" />
+                                                <circle cx="1.744" cy="1.744" r="1.744" transform="translate(13.355 19.334)" fill="#ddd" />
+                                                <circle cx="1.744" cy="1.744" r="1.744" transform="translate(20.33 19.334)" fill="#ddd" />
+                                                <circle cx="1.744" cy="1.744" r="1.744" transform="translate(27.305 19.334)" fill="#ddd" />
+                                            </g>
+                                        </svg>
+                                        
                                     </a>
                                 </div>
                                 <div class="header-menu-item menu-item-notification">
@@ -675,6 +720,65 @@
                     </div>
                 </div>
                 <div class="header__account-guest">
+                    <div class="header-menu">
+                        <div class="header-menu-content">
+                            <div class="header-menu-left">
+                                <div class="header-menu-mobile menu-item-control">
+                                    <a class="header-mobile-link">
+                                        <i class="header-mobile-icon fa-solid fa-bars"></i>
+                                    </a>
+                                </div>
+                                <div class="header-menu-logo">
+                                    <a href="" class="header-logo-link">
+                                        <span class="header-logo"></span>
+                                    </a>
+                                </div>
+                                <div class="header-menu-nav">
+                                    <div class="header-left-item">
+                                        <a href="" class="header-left-link">Trang chủ</a>
+                                    </div>
+                                    <div class="header-left-item">
+                                        <a href="" class="header-left-link">Phương pháp</a>
+                                    </div>
+                                    <div class="header-left-item">
+                                        <a href="" class="header-left-link">Khóa học</a>
+                                    </div>
+                                    <div class="header-left-item">
+                                        <a href="" class="header-left-link">Học phí</a>
+                                    </div>
+                                    <div class="header-left-item header-menu-more">
+                                        <a href="" class="header-left-link">
+                                            <span>Xem thêm</span>
+                                            <i class="fa-solid fa-angle-down header-left-icon"></i>
+                                        </a>
+    
+                                        <div class="menu-more-content">
+                                            <div class="menu-more-item">
+                                                <a href="" class="menu-more-link">Về VOCA</a>
+                                            </div>
+                                            <div class="menu-more-item">
+                                                <a href="" class="menu-more-link">Học bổng</a>
+                                            </div>
+                                            <div class="menu-more-item">
+                                                <a href="" class="menu-more-link">Kiểm tra trình độ</a>
+                                            </div>
+                                            <div class="menu-more-item">
+                                                <a href="" class="menu-more-link">Cộng đồng</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="header-menu-right">
+                                <div class="header-right-item">
+                                    <a class="header-right-link">Đăng nhập</a>
+                                </div>
+                                <div class="header-right-item header__trial-study">
+                                    <a class="header-right-link">Học thử</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     
                 </div>
             </div>
@@ -986,6 +1090,39 @@
                             </div>
                         </div>
                     </div>
+                    <div class="container-media">
+                        <div class="container-media-content">
+                            <h2 class="media-title">
+                                THƯƠNG HIỆU HỌC TIẾNG ANH TRỰC TUYẾN
+                                <span>UY TÍN</span>
+                                TẠI VIỆT NAM
+                            </h2>
+                            <div class="media-content">
+                                <div class="media-item">
+                                    <div class="media-left">
+                                        <img src="https://www.voca.vn/assets/images/home-isev.svg" alt="isev">
+                                    </div>
+                                    <div class="media-right">
+                                        <h3 class="media-right-name">Top 5 EDTECH ngôn ngữ tiêu biểu nhất</h3>
+                                        <div class="media-right-content">
+                                            Theo đề án 844, hệ sinh thái khởi nghiệp quốc gia, thuộc Bộ khoa học & Công nghệ Việt Nam.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media-item">
+                                    <div class="media-left">
+                                        <img src="https://www.voca.vn/assets/images/home-isev.svg" alt="isev">
+                                    </div>
+                                    <div class="media-right">
+                                        <h3 class="media-right-name">Top 5 EDTECH ngôn ngữ tiêu biểu nhất</h3>
+                                        <div class="media-right-content">
+                                            Theo đề án 844, hệ sinh thái khởi nghiệp quốc gia, thuộc Bộ khoa học & Công nghệ Việt Nam.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="container-community">
                         <div class="container-community-content">
                             <h2 class="community-title">
@@ -1069,74 +1206,145 @@
                             </div>
                         </div>
                     </div>
-                    <div class="container-media">
-                        <div class="container-media-content">
-                            <h2 class="media-title">
-                                THƯƠNG HIỆU HỌC TIẾNG ANH TRỰC TUYẾN
-                                <span>UY TÍN</span>
-                                TẠI VIỆT NAM
-                            </h2>
-                            <div class="media-content">
-                                <div class="media-item">
-                                    <div class="media-left">
-                                        <img src="https://www.voca.vn/assets/images/home-isev.svg" alt="isev">
+                    
+                </div>
+            </div>
+            <footer class="footer">
+                <div class="footer__account-logged hidden">
+                    <div class="footer-border">
+                        <div class="footer__logged-content">
+                            <div class="footer-item">
+                                <a href="" class="footer-link">Về VOCA</a>
+                            </div>
+                            <div class="footer-item">
+                                <a href="" class="footer-link">Khóa học</a>
+                            </div>
+                            <div class="footer-item">
+                                <a href="" class="footer-link">Premium</a>
+                            </div>
+                            <div class="footer-item">
+                                <a href="" class="footer-link">Học bổng</a>
+                            </div>
+                            <div class="footer-item">
+                                <a href="" class="footer-link">Kiểm tra trình độ</a>
+                            </div>
+                            <div class="footer-item">
+                                <a href="" class="footer-link">Blog</a>
+                            </div>
+                            <div class="footer-item">
+                                <a href="" class="footer-link">Liên hệ</a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="footer__account-guest">
+                    <div class="footer__guest-content">
+                        <div class="footer-info">
+                            <div class="footer-intro footer-item">
+                                <div class="footer-title">Giới thiệu</div>
+                                <div class="footer-intro-text">
+                                    Được phát triển từ năm 2013, VOCA là dự án về công nghệ giáo dục ngôn ngữ trực tuyến dành cho cộng đồng với sứ mệnh xóa bỏ rào cản 
+                                    về Anh ngữ và chắp cánh cho ước mơ, hoài bão của các bạn học sinh, sinh viên Việt Nam.
+                                </div>                            
+                            </div>
+                            <div class="footer-control footer-item">
+                                <div class="footer-title">Danh mục chính</div>
+                                <div class="footer-control-content">
+                                    <div class="footer-control-item">
+                                        <a href="" class="footer-control-link">Trang chủ</a>
                                     </div>
-                                    <div class="media-right">
-                                        <h3 class="media-right-name">Top 5 EDTECH ngôn ngữ tiêu biểu nhất</h3>
-                                        <div class="media-right-content">
-                                            Theo đề án 844, hệ sinh thái khởi nghiệp quốc gia, thuộc Bộ khoa học & Công nghệ Việt Nam.
-                                        </div>
+                                    <div class="footer-control-item">
+                                        <a href="" class="footer-control-link">Phương pháp</a>
+                                    </div>
+                                    <div class="footer-control-item">
+                                        <a href="" class="footer-control-link">Khóa học</a>
+                                    </div>
+                                    <div class="footer-control-item">
+                                        <a href="" class="footer-control-link">Học phí</a>
+                                    </div>
+                                    <div class="footer-control-item">
+                                        <a href="" class="footer-control-link">Premium</a>
+                                    </div>
+                                    <div class="footer-control-item">
+                                        <a href="" class="footer-control-link">Học bổng</a>
+                                    </div>
+                                    <div class="footer-control-item">
+                                        <a href="" class="footer-control-link">Kiểm tra trình độ</a>
+                                    </div>
+                                    <div class="footer-control-item">
+                                        <a href="" class="footer-control-link">Blog</a>
                                     </div>
                                 </div>
-                                <div class="media-item">
-                                    <div class="media-left">
-                                        <img src="https://www.voca.vn/assets/images/home-isev.svg" alt="isev">
+                            </div>
+                            <div class="footer-item footer-contact">
+                                <div class="footer-title">Đơn vị chủ quản</div>
+                                <div class="footer-contact-content">
+                                    <div class="footer-contact-item">
+                                        <a href="" class="footer-contact-link">
+                                            <i class="footer-contact-icon fa-solid fa-house"></i>
+                                            <div class="footer-contact-text">
+                                                Công ty trách nhiệm hữu hạn FANKEN
+                                            </div>
+                                        </a>
                                     </div>
-                                    <div class="media-right">
-                                        <h3 class="media-right-name">Top 5 EDTECH ngôn ngữ tiêu biểu nhất</h3>
-                                        <div class="media-right-content">
-                                            Theo đề án 844, hệ sinh thái khởi nghiệp quốc gia, thuộc Bộ khoa học & Công nghệ Việt Nam.
+                                    <div class="footer-contact-item">
+                                        <a href="" class="footer-contact-link">
+                                            <i class="footer-contact-icon fa-solid fa-location-dot"></i>
+                                            <div class="footer-contact-text">
+                                                Trụ sở: 213 Bis Nam Kỳ Khởi Nghĩa, Phường 7, Quận 3, TP. Hồ Chí Minh, Việt Nam
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="footer-contact-item">
+                                        <a href="" class="footer-contact-link">
+                                            <i class="footer-contact-icon fa-solid fa-phone"></i>
+                                            <div class="footer-contact-text">
+                                                Hotline hỗ trợ: 082.990.5858
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="footer-contact-item">
+                                        <a href="" class="footer-contact-link">
+                                            <i class="footer-contact-icon fa-solid fa-envelope"></i>
+                                            <div class="footer-contact-text">
+                                                Email: support@voca.vn
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="footer-item footer-app">
+                                <div class="footer-title">Ứng dụng mobile</div>
+                                <div class="footer-app-content">
+                                    <div class="footer-app-item">
+                                        <div class="footer-app-store">
+                                            <img src="https://www.voca.vn/assets/images/ios.png">
+                                        </div>
+                                    </div>
+                                    <div class="footer-app-item">
+                                        <div class="footer-app-google">
+                                            <img src="https://www.voca.vn/assets/images/android.png">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <footer class="footer">
-                <div class="footer-border">
-                    <div class="footer-content">
-                        <div class="footer-item">
-                            <a href="" class="footer-link">Về VOCA</a>
-                        </div>
-                        <div class="footer-item">
-                            <a href="" class="footer-link">Khóa học</a>
-                        </div>
-                        <div class="footer-item">
-                            <a href="" class="footer-link">Premium</a>
-                        </div>
-                        <div class="footer-item">
-                            <a href="" class="footer-link">Học bổng</a>
-                        </div>
-                        <div class="footer-item">
-                            <a href="" class="footer-link">Kiểm tra trình độ</a>
-                        </div>
-                        <div class="footer-item">
-                            <a href="" class="footer-link">Blog</a>
-                        </div>
-                        <div class="footer-item">
-                            <a href="" class="footer-link">Liên hệ</a>
-                        </div>
-                    </div>
-
-                </div>
+                        <div class="footer-copyright">
+                            <div class="footer-copyright-left">
+                                <span>
+                                    Copyright © 2022 Fanken Ltd,.. Since 2013
+                                </span>
+                            </div>
+                            <a class="footer-copyright-right">
+                                <img style="    width: 100%;max-width: 170px;margin-top: 7px;" src="https://www.voca.vn/assets/images/commercial.png">
+                            </a>
             </footer>
         </div>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <script src="/assets/javascript/main.js" async defer></script>
+        <script src="assets/javascript/main.js" async defer></script>
     </body>
 </html>

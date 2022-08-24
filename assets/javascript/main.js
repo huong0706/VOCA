@@ -25,12 +25,27 @@ function scrollAnimation() {
             }
         }
         // Lặp lại animation khi kéo xuống
-        // else {
-        //     item.classList.remove('animationLeft');
-        //     item.classList.remove('animationRight');
+        else {
+            item.classList.remove('animationLeft');
+            item.classList.remove('animationRight');
 
 
-        // }
+        }
     }
 }
 window.addEventListener('scroll', scrollAnimation);
+
+
+// Change header when clicked button
+var headerLogged = document.querySelector('.header__account-logged');
+var headerGuest = document.querySelector('.header__account-guest');
+var footerLogged = document.querySelector('.footer__account-logged');
+var footerGuest = document.querySelector('.footer__account-guest');
+var trialStudyBtn = document.querySelector('.header__trial-study');
+
+trialStudyBtn.addEventListener('click', function() {
+    headerGuest.classList.toggle('hidden');
+    headerLogged.classList.toggle('hidden');
+    footerGuest.classList.toggle('hidden');
+    footerLogged.classList.toggle('hidden');
+});
