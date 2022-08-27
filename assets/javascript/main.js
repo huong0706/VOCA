@@ -49,3 +49,14 @@ trialStudyBtn.addEventListener('click', function() {
     footerGuest.classList.toggle('hidden');
     footerLogged.classList.toggle('hidden');
 });
+
+// Show control menu
+var showControl = document.querySelector('.menu-item-control .header-mobile-link');
+var hideControl = document.querySelector('.control-header-cancel');
+var headerControl = document.querySelector('.header-control');
+showControl.addEventListener('click', function() {
+    headerControl.classList.toggle('hidden');
+});
+hideControl.addEventListener('click', function() {
+    headerControl.classList.toggle('hidden');
+});
