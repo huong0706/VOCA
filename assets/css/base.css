@@ -75,3 +75,6 @@ img, svg {
 .hidden {
     display: none;
 }
+label {
+    cursor: pointer;
+}

@@ -212,10 +212,8 @@
 .header-menu-nav {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 35px;
     height: 100%;
-    align-items: center;
 }
 .header-menu-item {
     position: relative;
@@ -246,6 +244,59 @@
     display: block;
 }
 
+/* Menu control */
+.menu-item-control {
+    position: static;
+    cursor: pointer;
+}
+.header-control {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #0064D6;
+    width: 100%;
+    height: 100vh;
+    padding: 15px 20px;
+}
+.control-content {
+    
+}
+.control-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.control-header-logo {
+
+}
+.control-header-cancel {
+    font-size: 30px;
+    color: var(--white);
+
+}
+.control-body {
+    margin-top: 30px;
+
+}
+.control-item {
+    margin-top: 15px;
+    
+}
+.control-link {
+    font-size: 15px;
+    color: var(--white);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ffffff80;
+    display: block;
+}
+.control-link:hover {
+    text-decoration: underline;
+}
+
 /* Header account guest */
 .header__account-guest .header-menu {
     background-color: #0064D6;
@@ -274,8 +325,8 @@
 .header-left-icon {
     margin-left: 4px;
 }
-.header-right-item:last-child .header-right-link {
-    min-width: 125px;
+.header__trial-study .header-right-link {
+    width: 125px;
     background-color: var(--white);
     color: #1CB0F6;
     border-radius: 16px;
@@ -357,11 +408,12 @@
 
 /* Header library */
 .menu-item-library {
+    position: static;
 }
 .header-library {
     position: absolute;
     top:100%;
-    left: -308px;
+    left: 0;
     padding: 20px 35px;
     background-color: var(--white);
     border: 1px solid var(--border-color);
@@ -371,7 +423,7 @@
     content: '';
     position: absolute;
     top: -25px;
-    left: 330px;
+    left: 410px;
     border-width: 12px;
     border-style: solid;
     border-color: transparent transparent var(--border-color) transparent;
@@ -380,7 +432,7 @@
     content: '';
     position: absolute;
     top: -24px;
-    left: 330px;
+    left: 410px;
     border-width: 12px;
     border-style: solid;
     border-color: transparent transparent white transparent;
@@ -1225,3 +1277,4 @@
 .footer-copyright-right {
     width: 90px;
 }
+
