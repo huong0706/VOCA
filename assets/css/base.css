@@ -42,36 +42,6 @@ img, svg {
     src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); 
 }
 
-/* Animation */
-@keyframes slideInLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-180%);
-    }
-    to {
-        opacity: 1;
-        display: block;
-        transform: translateX(0);
-
-    }
-}
-@keyframes slideInRight {
-    from {
-        opacity: 0;
-        transform: translateX(100%);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0);
-
-    }
-} 
-.animationLeft {
-    animation: slideInLeft linear 0.5s;
-}
-.animationRight {
-    animation: slideInRight linear 0.5s;
-}
 .hidden {
     display: none;
 }
